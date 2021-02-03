@@ -1,0 +1,20 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+numpy = "*"
+
+[dev-packages]
+setuptools = "*"
+wheel = "*"
+pipenv-setup = "*"
+flake8 = "*"
+pytest = "*"
+pytest-cov = "*"
+pylint = "*"
+twine = "*"
+
+[requires]
+python_version = "3.8"
