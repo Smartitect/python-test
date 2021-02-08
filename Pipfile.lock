@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "e1bbc7462307f995d56463702a9b4cd80fc4a8ec38de4d1a2e071e53075d1bb8"
+            "sha256": "d6f06b864a40d9df7301f053a8deac8ece00d31d16f1d9cf1e906c46d22fdd06"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -54,14 +54,6 @@
                 "sha256:a841dacd6b99318a741b166adb07e19ee71a274450e68237b4650ca1055ab128"
             ],
             "version": "==1.4.4"
-        },
-        "artifacts-keyring": {
-            "hashes": [
-                "sha256:22559cb6de86a1c062c0d81aa638ab046aceb8362db01b1a60c04040d8915438",
-                "sha256:6b97164052d026c210da1b1a74a035b19bfb7d3b2d9eacb93db0dd7935dc8128"
-            ],
-            "index": "pypi",
-            "version": "==0.3.1"
         },
         "astroid": {
             "hashes": [
@@ -253,7 +245,7 @@
                 "sha256:9acb3e1452edbb7544822b12fd25459078769e560fa51f418b6d00afaa6178df",
                 "sha256:9f44660a5d4931bdc14c08a1d01ef30b18a7a8147380710d8c9f9531e1f6c3c0"
             ],
-            "index": "pypi",
+            "markers": "python_version >= '3.6'",
             "version": "==22.0.1"
         },
         "lazy-object-proxy": {
