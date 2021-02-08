@@ -41,8 +41,12 @@ jobs:
       run: |
         pipenv run python setup.py sdist bdist_wheel
     - name: Publish
+      env:
+        TWINE_REPOSITORY_URL: ${{ secrets.PYTHON_PACKAGE_REPOSITORY_URL }}
+        TWINE_USERNAME: ${{ secrets.PYTHON_PACKAGE_REPOSITORY_USERNAME }}
+        TWINE_PASSWORD: ${{ secrets.PYTHON_PACKAGE_REPOSITORY_PASSWORD }}
       run: |
         # pipenv run twine upload dist/* --repository-url https://pkgs.dev.azure.com/BarrySmart/f5febf18-50f5-4648-bff8-154b49344938/_packaging/testPythonPackage/pypi/upload --password kzwhyvbtkasidqmr5s2zirvnryekla6ic46bxuy77jsmghw4rwnq
-        pipenv run twine upload dist/* --repository-url ${{ secrets.PYTHON_PACKAGE_REPOSITORY_URL }} --password ${{ secrets.PYTHON_PACKAGE_REPOSITORY_PASSWORD }}
+        pipenv run twine upload dist/* --non-interactive
         
 
