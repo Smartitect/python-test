@@ -1,4 +1,4 @@
-from project_name.sample_module import SampleClass
+from python_test.sample_module import SampleClass
 
 
 def test_simple_method():
