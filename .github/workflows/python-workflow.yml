@@ -37,14 +37,3 @@ jobs:
     - name: Test with pytest
       run: |
         pipenv run pytest
-    - name: Package with SetupTools
-      run: |
-        pipenv run python setup.py sdist bdist_wheel
-    - name: Publish
-      env:
-        # TWINE_REPOSITORY_URL: ${{ secrets.PYTHON_PACKAGE_REPOSITORY_URL }}
-        # TWINE_USERNAME: ${{ secrets.PYTHON_PACKAGE_REPOSITORY_USERNAME }}
-        # TWINE_PASSWORD: ${{ secrets.PYTHON_PACKAGE_REPOSITORY_PASSWORD }}
-      run: |
-        pipenv run twine upload dist/* --repository-url https://pkgs.dev.azure.com/BarrySmart/f5febf18-50f5-4648-bff8-154b49344938/_packaging/testPythonPackage/pypi/upload --user BarrySmart --password kzwhyvbtkasidqmr5s2zirvnryekla6ic46bxuy77jsmghw4rwnq
-        # pipenv run twine upload dist/* --non-interactive
